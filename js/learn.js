@@ -38,8 +38,8 @@ var learn = (function (learn) {
     }
     $(categories).each(function(i){
       if (selectedCategory == categories[i].url){
-        $('#mainmenu h3').html(categories[i].name);
-        $('#mainmenu p').html(categories[i].description);
+        $('#mainmenu .category-name').html(categories[i].name);
+        $('#mainmenu .category-description').html(categories[i].description);
         $('#mainmenu table tbody').html('');
         $(categories[i].lessons).each(function(x){
           $('#mainmenu table tbody').append('<tr>');
